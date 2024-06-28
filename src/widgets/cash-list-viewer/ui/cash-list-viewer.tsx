@@ -3,7 +3,7 @@ import { CashList } from "@/widgets/cash-list-viewer/ui/cash-list";
 import { useEffect, useRef, useState } from "react";
 import { TFullCashListItem } from "@/shared/api/models";
 import { Box } from "@mui/material";
-import { useLocalItems } from "@/widgets/cash-list-viewer/hooks/use-local-items";
+import { useLocalItems } from "@/widgets/cash-list-viewer/lib/use-local-items";
 
 interface ICashListViewer {
   options: TFullCashListItem[];

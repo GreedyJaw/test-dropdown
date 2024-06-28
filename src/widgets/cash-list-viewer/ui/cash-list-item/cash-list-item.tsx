@@ -1,5 +1,5 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { CashCard } from "@/shared/ui/cash-card/cash-card";
+import { CashCard } from "@/entities/cash-card/cash-card";
 import { TFullCashListItem } from "@/shared/api/models";
 import {
   StyledRemoveButton,

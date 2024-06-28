@@ -6,7 +6,7 @@ import {
   StyledPrice,
   StyledRoot,
   StyledTitle,
-} from "@/shared/ui/cash-card/cash-card.styled";
+} from "@/entities/cash-card/cash-card.styled";
 
 export function CashCard({
   ticker,
