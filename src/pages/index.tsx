@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Box, Container } from "@mui/material";
+import {Alert, AlertTitle, Box, Container, Typography} from "@mui/material";
 import { TFullCashListItem } from "@/shared/api/models";
 import { fetchFullCashList } from "@/shared/api/fetch-full-cash-list";
 import { CashListViewer } from "@/widgets/cash-list-viewer/ui/cash-list-viewer";
@@ -13,6 +13,9 @@ export default function Home({ cashList }: IHomePage) {
     <main>
       <Box py={8}>
         <Container>
+          <Box mb={4}>
+            <Typography variant="h4">Курс валют на сегодня</Typography>
+          </Box>
           {cashList?.length ? (
             <CashListViewer options={cashList} initialValues={["USD", "EUR"]} />
           ) : (
